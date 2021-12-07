@@ -25,6 +25,9 @@ clear
 	wget http://centros.edu.guadalinex.org/Edu/focal/pool/main/e/educaandos-keyring/educaandos-keyring_0.3-4_amd64.deb
 	sudo dpkg -i educaandos-keyring_0.3-4_amd64.deb
 	sudo rm *.deb
+#instalar synaptic
+        sudo apt install synaptic
+	sudo apt install educaandos-software-center
 
 # Actualiza ubuntu mini a educaandos
 
