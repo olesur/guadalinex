@@ -17,6 +17,7 @@ clear
 	sudo rm *.deb
 #instalar synaptic
         sudo apt install synaptic educaandos-software-center zenity
+	sudo apt install educaandos-artwork
 	sudo apt install flatpak
 	sudo apt install gnome-software-plugin-flatpak
 	sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
