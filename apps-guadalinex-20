@@ -426,7 +426,7 @@ opc=$( \
         --width=625 \
         --height=700 \
     False test "Compenzar a instalar Educaandos." \
-    False dock "Instalar Dock (Plank)." \
+    False plank "Instalar Dock (Plank)." \
     False usuario "Crear usuario sin derechos admin. No combine esta opción con otras." \
     False restore_usuario "Restablece un usuario a valores originales. No combine esta opción con otras." \
     False installQshutdown "Instalar Apagado automático a las XX:XX horas de L-V (app qshutdown)" \
