@@ -11,7 +11,7 @@ clear
 	wget --no-check-certificate --content-disposition https://github.com/aosucas499/sources/raw/main/focal-modify-sources.list
 	sudo cp /etc/apt/sources.list /etc/apt/sources.list.old
 	sudo rm /etc/apt/sources.list
-	#sudo mv focal-modify-sources.list /etc/apt/sources.list
+	sudo mv focal-modify-sources.list /etc/apt/sources.list
 	sudo mv educaandos.list /etc/apt/sources.list.d/guadalinex.list
 
 	wget http://centros.edu.guadalinex.org/Edu/focal/pool/main/e/educaandos-keyring/educaandos-keyring_0.3-4_amd64.deb
@@ -19,7 +19,7 @@ clear
 	sudo rm *.deb
 #instalar synaptic
         sudo apt update
-        sudo apt install synaptic educaandos-software-center zenity
+        sudo apt install educaandos-software-center 
 	sudo apt install educaandos-artwork
 	sudo apt install flatpak
 	sudo apt install gnome-software-plugin-flatpak
