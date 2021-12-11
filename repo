@@ -1,0 +1,12 @@
+# Añade repositorios ubuntu y educaandos
+	sudo apt-get update -y
+	sudo apt-get install git -y
+	wget --no-check-certificate --content-disposition https://github.com/aosucas499/sources/raw/main/educaandos.list
+	wget --no-check-certificate --content-disposition https://github.com/aosucas499/sources/raw/main/focal-modify-sources.list
+	sudo rm /etc/apt/sources.list
+	sudo mv focal-modify-sources.list /etc/apt/sources.list
+	sudo mv educaandos.list /etc/apt/sources.list.d/guadalinex.list
+
+	wget http://centros.edu.guadalinex.org/Edu/focal/pool/main/e/educaandos-keyring/educaandos-keyring_0.3-4_amd64.deb
+	sudo dpkg -i educaandos-keyring_0.3-4_amd64.deb
+	sudo rm *.deb
